@@ -1,0 +1,171 @@
+@import "./basisLayout.css";
+.content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movie-content {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-table {
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    display: grid;
+    margin: 10px 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.movie-pic {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    margin-top: 20px;
+    padding: 0 25px;
+}
+
+.movie-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.movie-button {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-button button {
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    outline: none;
+}
+
+.movie-info {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-name,
+.movie-length,
+.movie-genre,
+.movie-desc {
+    margin: 10px 0;
+}
+
+.movie-name {
+    height: 55px;
+}
+
+.movie-genre button {
+    width: 70px;
+    height: 30px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+.movie-desc {
+    max-height: 235px;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-session {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-day {
+    display: flex;
+}
+
+.select-day input[type=radio] {
+    display: none;
+}
+
+.select-day input[type=radio]+span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.select-day input[type=radio]:checked+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC106;
+    transition-delay: 5ms;
+}
+
+.select-cinema {
+    height: 30px;
+    margin: 20px 0;
+}
+
+.select-cinema select {
+    width: 120px;
+    height: 100%;
+}
+
+.select-time {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-time input[type=submit] {
+    display: none;
+}
+
+.select-time input[type=submit]+span {
+    width: 70px;
+    height: 30px;
+    border: 1px solid #000000;
+    background-color: aliceblue;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}

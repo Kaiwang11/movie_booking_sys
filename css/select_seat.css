@@ -1,0 +1,79 @@
+@import "./basisLayout.css";
+.seat-container {
+    width: 1370px;
+    height: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.seat-map {
+    display: grid;
+    background-color: #000000;
+    grid-template-columns: repeat(24, 57px);
+    grid-template-rows: repeat(14, 27px);
+    justify-content: center;
+}
+
+.locate-screen {
+    grid-column-start: 1;
+    grid-column-end: 25;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.locate-left {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 15;
+}
+
+.locate-middle {
+    grid-column-start: 8;
+    grid-column-end: 19;
+    grid-row-start: 2;
+    grid-row-end: 15;
+}
+
+.locate-right {
+    grid-column-start: 21;
+    grid-column-end: 25;
+    grid-row-start: 2;
+    grid-row-end: 15;
+}
+
+.locate-left,
+.locate-middle,
+.locate-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.locate-space {
+    margin-top: 27px;
+}
+
+.seat {
+    width: 55px;
+    height: 25px;
+    padding: 1px;
+}
+
+.seat input {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    outline: none;
+}
+
+.seat input:focus {
+    background-color: #FFC106;
+    transition-delay: 5ms;
+}

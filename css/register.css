@@ -1,0 +1,65 @@
+@import "./basisLayout.css";
+input {
+    height: 30px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-area {
+    width: 550px;
+    height: 650px;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.title-area h3 {
+    font-size: 1.5em;
+}
+
+.title-area,
+.gender-area,
+.name-area,
+.address-area,
+.email-area,
+.phone-area,
+.pwd-area,
+.submit-area {
+    margin: 25px 0;
+}
+
+.submit-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.submit-area input {
+    width: 70px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #e4171a;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-area input:hover {
+    background-color: #e44245;
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.submit-area a {
+    color: rgb(15, 36, 231);
+}

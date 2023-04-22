@@ -1,0 +1,83 @@
+@import "./basisLayout.css";
+.content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movie-content {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-type {
+    width: 1180px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movie-type button {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #79B6EC;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.movie-item {
+    width: 280px;
+    height: 475px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #e0e0e0;
+    margin: 10px;
+}
+
+.movie-pic {
+    width: 100%;
+    height: 400px;
+}
+
+.movie-pic img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.movie-desc {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.movie-desc button {
+    width: 120px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #e4171a;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.movie-desc button:hover {}

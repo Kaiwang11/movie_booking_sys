@@ -1,0 +1,55 @@
+@import "./basisLayout.css";
+.content {
+    width: 100%;
+    height: 800px;
+    background-color: #f8f7f7;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(100px, 1fr));
+    /*row-gap: 20px;
+    column-gap: 20px;*/
+    font-family: Arial, "Microsoft JhengHei", Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.content-b {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px #e0e0e0;
+}
+
+.bookTic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookTic-title {
+    height: 60px;
+    font-size: 1.5em;
+    color: #000000;
+    text-align: center;
+}
+
+.bookTic-item {
+    width: 500px;
+    margin: 20px 0;
+}
+
+.bookTic-item select {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 12px;
+    font-size: 1em;
+    outline: none;
+}
+
+.bookTic-item input {
+    width: 40%;
+    height: 40px;
+}
